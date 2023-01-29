@@ -1,6 +1,6 @@
 <?php
 
-class API {
+class MyAPI {
     function __construct(){
         add_action('rest_api_init', [$this, 'register_my_rest_routes']);
     }

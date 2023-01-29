@@ -1,5 +1,5 @@
 <?php
-class HelperFunctions{
+class MyHelperFunctions{
 
     function test_echo(){
         echo "test!";

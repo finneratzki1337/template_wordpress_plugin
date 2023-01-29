@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: General Plugin Template
-Plugin URI: https://vouchershop.golfresortchallenge.de
+Plugin URI: My Plugin URI
 Description: Programmed object oriented with option to use hooks, rest-api and more
-Version: 0.9
+Version: 1.0
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -21,7 +21,7 @@ function my_plugin_init(){
 /*
 Activate Plugin
 */
-$Plugin = my_plugin_init();
+$MyPlugin = my_plugin_init();
 
 class MyPlugin {
 	function __construct(){
@@ -44,16 +44,15 @@ class MyPlugin {
 
 	public function init_plugin() {
 		// Create instances of subclasses
-		//$this->GRCLogger = new GRCLogger;
-        $this->Helpers = new HelperFunctions();
-        $this->Shortcodes = new Shortcodes();
-        $this->API = new API();
-		$this->CustomerQueries = new CustomQueries();
+        $this->Helpers = new MyHelperFunctions();
+        $this->Shortcodes = new MyShortcodes();
+        $this->API = new MyAPI();
+		$this->CustomerQueries = new MyCustomQueries();
 	}
 
 	public function define_function(){
 		//Constants
-		define( 'MY_PLUGIN_URL', plugins_url() . '/my_plugin_name/');
+		define( 'MY_PLUGIN_URL', plugins_url() . '/template_wordpress_plugin/');
 	}
 
 	function add_actions(){
