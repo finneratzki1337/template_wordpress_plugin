@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: General Plugin Template
+Plugin Name: GRC Vouchershop
 Plugin URI: My Plugin URI
-Description: Programmed object oriented with option to use hooks, rest-api and more
+Description: Limitting Shopping Features
 Version: 1.0
 */
 
